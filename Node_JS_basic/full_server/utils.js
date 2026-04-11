@@ -15,7 +15,7 @@ export default function readDatabase(filePath) {
 
       const lines = data.split('\n').filter((line) => line.trim() !== '');
       if (lines.length > 0) {
-        lines.shift(); // Remove the header
+        lines.shift();
       }
 
       const fields = {};
